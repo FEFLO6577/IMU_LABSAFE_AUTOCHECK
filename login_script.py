@@ -6,7 +6,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
+from webdriver_manager.chrome import ChromeDriverManager
 
+# 自动下载匹配的 chromedriver
+driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager().install()),
+    options=options
+)
 # 浏览器驱动配置（需自行下载对应版本）
 DRIVER_PATH = '/usr/local/bin/chromedriver'
 
