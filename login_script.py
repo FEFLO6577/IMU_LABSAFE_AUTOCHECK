@@ -7,15 +7,18 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
 
 # 自动下载匹配的 chromedriver
 driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
     options=options
 )
-# 浏览器驱动配置（需自行下载对应版本）
-DRIVER_PATH = '/usr/local/bin/chromedriver'
-
 # 登录凭证
 USERNAME = '32407082'
 PASSWORD = 'Natsuki6577/'
