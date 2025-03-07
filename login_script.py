@@ -24,7 +24,6 @@ USERNAME = '32407082'
 PASSWORD = 'Natsuki6577/'
 
 # 初始化浏览器
-driver = webdriver.Chrome(service=Service(DRIVER_PATH))
 driver.get('https://labsafe.imu.edu.cn/lab-platform/login')
 
 try:
