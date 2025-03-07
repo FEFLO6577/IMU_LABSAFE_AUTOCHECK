@@ -28,7 +28,7 @@
 
 ### 3. 配置 GitHub Actions
 - 确保项目的 GitHub Actions 已启用。
-- 打卡时间默认为 **每天 7:00**，如需修改，请编辑 `.github/workflows/daily_checkin.yml` 文件中的 `cron` 表达式：
+- 打卡时间默认为 **每天 7:00**，如需修改，请编辑 `.github/workflows/main.yml` 文件中的 `cron` 表达式：
   ```yaml
   schedule:
     - cron: '0 23 * * *'  # 每天 UTC 时间 23:00（北京时间 7:00）
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 - 确保 Chrome 和 Chromedriver 版本匹配。
 
 ### 2. 如何修改打卡时间？
-编辑 `.github/workflows/daily_checkin.yml` 文件中的 `cron` 表达式。例如：
+编辑 `.github/workflows/main.yml` 文件中的 `cron` 表达式。例如：
 - 每天 8:00 打卡：`0 0 * * *`（UTC 时间 0:00，北京时间 8:00）
 - 每天 12:00 打卡：`0 4 * * *`（UTC 时间 4:00，北京时间 12:00）
 
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 
 ## 致谢
 
-- 本项目参考自 [trae.ai](https://trae.ai)，感谢原作者的启发。
+- 本项目参考自 [trae](www.trae.com.cn)，感谢AI编程软件。
 - 感谢各位大佬的改进建议，欢迎提交 Issue 或 Pull Request。
 
 ---
@@ -119,7 +119,7 @@ pip install -r requirements.txt
 
 ## 支持与反馈
 
-如有任何问题或建议，请提交 [Issue](https://github.com/您的用户名/IMU_LABSAFE_AUTOCHECK/issues) 或通过邮件联系我。
+如有任何问题或建议，请提交 [Issue](https://github.com/FEFLO677/IMU_LABSAFE_AUTOCHECK/issues) 或通过邮件联系我。
 
 ---
 
