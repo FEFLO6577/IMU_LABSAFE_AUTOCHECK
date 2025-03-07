@@ -8,7 +8,7 @@ import time
 import sys
 
 # 浏览器驱动配置（需自行下载对应版本）
-DRIVER_PATH = 'chromedriver.exe'
+DRIVER_PATH = '/usr/local/bin/chromedriver'
 
 # 登录凭证
 USERNAME = '32407082'
