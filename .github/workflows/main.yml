@@ -28,7 +28,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-      # Runs a single command using the runners shell
+      # Runs a single command using the runners shell, if any error, check the Python version.
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
