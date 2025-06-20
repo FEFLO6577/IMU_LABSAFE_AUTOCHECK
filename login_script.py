@@ -42,11 +42,11 @@ try:
         EC.presence_of_element_located((By.XPATH, '//*[@id="username"]'))
     )
     username.send_keys(USERNAME)
-
+    print("用户名输入成功")
     # 定位密码输入框
     password = driver.find_element(By.XPATH, '//*[@id="password"]')
     password.send_keys(PASSWORD)
-
+    print("密码输入成功")
     # 点击登录按钮
     login_btn = driver.find_element(By.XPATH, '//*[@id="login_submit"]')
     login_btn.click()
@@ -62,7 +62,7 @@ try:
         EC.element_to_be_clickable((By.XPATH, '//*[@id="wrapApp"]/div/div[2]/div[2]/div/div[2]/div/div/div[2]/ul/li'))
     )
     target_element.click()
-    
+    print("进入打卡选项页")
     # 等待并点击目标元素
     target_element = WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.XPATH, '//*[@id="wrapApp"]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[5]/div/span'))
