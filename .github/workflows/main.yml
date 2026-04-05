@@ -21,7 +21,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       # 安装 Chrome 浏览器
       - name: Install Chrome
         run: |
@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell, if any error, check the Python version.
       - name: 'Set up Python'
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v5
         with:
            python-version: 3.10.20
       - name: 'Install requirements'
