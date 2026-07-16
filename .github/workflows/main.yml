@@ -37,12 +37,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Set DNS to Aliyun
         run: |
-          echo "nameserver 202.207.158.130" | sudo tee /etc/resolv.conf
-      - name: Test DNS resolution
-        run: |
-          nslookup labsafe.imu.edu.cn
-          dig labsafe.imu.edu.cn || true
-          getent hosts labsafe.imu.edu.cn || true
+          echo "nameserver 119.28.28.28" | sudo tee /etc/resolv.conf
       - name: 'Working'
         run: |
           chmod +x login_script.py
